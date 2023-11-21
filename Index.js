@@ -2,6 +2,7 @@ const imageList = document.getElementById('image-list');
 const imageInput = document.getElementById('image-input');
 const imagePreview = document.getElementById('image-preview');
 
+imageInput.onchange = uploadImage;
 function uploadImage() {
     const file = imageInput.files[0];
     if(file) {
